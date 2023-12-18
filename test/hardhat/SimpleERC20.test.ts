@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 import {ethers, deployments, getUnnamedAccounts, getNamedAccounts} from 'hardhat';
-import {IERC20} from '../typechain-types';
+import {IERC20} from '../../typechain-types';
 import {setupUser, setupUsers} from './utils';
 
 const setup = deployments.createFixture(async () => {

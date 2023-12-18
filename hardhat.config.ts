@@ -10,7 +10,7 @@ import 'solidity-coverage';
 import 'hardhat-deploy';
 import 'hardhat-deploy-ethers';
 import 'hardhat-deploy-tenderly';
-
+import '@nomicfoundation/hardhat-foundry';
 import {node_url, accounts, addForkConfiguration} from './utils/network';
 
 const config: HardhatUserConfig = {

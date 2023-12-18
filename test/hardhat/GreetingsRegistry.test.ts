@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 import {ethers, deployments, getUnnamedAccounts} from 'hardhat';
-import {GreetingsRegistry} from '../typechain-types';
+import {GreetingsRegistry} from '../../typechain-types';
 import {setupUsers} from './utils';
 
 const setup = deployments.createFixture(async () => {
