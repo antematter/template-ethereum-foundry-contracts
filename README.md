@@ -1,7 +1,7 @@
 # Boilerplate for hybrid development using Hardhat and Foundry
 
 Uses [https://github.com/wighawag/template-ethereum-contracts](https://github.com/wighawag/template-ethereum-contracts) as base template.
-Adds `nomicfoundation/hardhat-foundry` package and divdes tests into hardhat and foundry. `foundry.toml` is modified with several configurations including remappings, solc version test directory.
+Adds `nomicfoundation/hardhat-foundry` npm package and divides tests into hardhat and foundry. `foundry.toml` is modified with several configurations including remappings, solc version test directory.
 
 ## INSTALL
 
