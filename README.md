@@ -1,4 +1,7 @@
-# Boilerplate for ethereum solidity smart contract development
+# Boilerplate for hybrid development using Hardhat and Foundry
+
+Uses [https://github.com/wighawag/template-ethereum-contracts](https://github.com/wighawag/template-ethereum-contracts) as base template.
+Adds `nomicfoundation/hardhat-foundry` package and divdes tests into hardhat and foundry. `foundry.toml` is modified with several configurations including remappings, solc version test directory.
 
 ## INSTALL
 
@@ -12,42 +15,16 @@ There are 3 flavors of tests: hardhat, dapptools and forge
 
 ### hardhat
 
-- One using hardhat that can leverage hardhat-deploy to reuse deployment procedures and named accounts:
+-   One using hardhat that can leverage hardhat-deploy to reuse deployment procedures and named accounts:
 
 ```bash
-yarn test
+yarn test:hardhat
 ```
 
-### [dapptools](https://dapp.tools)
+### foundry
 
 ```bash
-dapp test
-```
-
-The latter requires additional step to set up your machine:
-
-Install dapptools (Following instruction [here](https://github.com/dapphub/dapptools#installation)):
-
-```bash
-# user must be in sudoers
-curl -L https://nixos.org/nix/install | sh
-
-# Run this or login again to use Nix
-. "$HOME/.nix-profile/etc/profile.d/nix.sh"
-
-curl https://dapp.tools/install | sh
-```
-
-Then install solc with the correct version:
-
-```bash
-nix-env -f https://github.com/dapphub/dapptools/archive/master.tar.gz -iA solc-static-versions.solc_0_8_9
-```
-
-### forge
-
-```bash
-forge test
+yarn test:foundry
 ```
 
 This require the installation of forge (see [foundry](https://github.com/gakonst/foundry))
